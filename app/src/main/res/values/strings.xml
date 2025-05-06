@@ -1,0 +1,16 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <string name="app_name">Hannom</string>
+    <string name="belajar_seru">祝伴學𢝙𨤔 (Chúc bạn học vui vẻ)</string>
+    <string name="hannom_developer">Nhà phát triển</string>
+
+    <string name="belikan_kami_secangkir_kopi">唉擁護衆碎 (Hãy ủng hộ chúng tôi)</string>
+    <string name="donasi">Ủng hộ</string>
+    <string name="pencet_tombol_untuk_memulai_belajar_dan_games">扨𨨷抵扒頭學吧𨔈(Nhấn nút để bắt đầu học và chơi)</string>
+    <string name="binatang">Động vật</string>
+    <string name="profile">Hồ sơ</string>
+    <string name="klik_tombol_yang_ada_untuk_memulai_belajar_bermain_games_dan_lainnya">Nhấn các nút để bắt đầu học, chơi trò chơi và nhiều thứ khác</string>
+    <string name="belajar_alfabet">Học bảng chữ cái</string>
+    <string name="belajar_warna">Học màu sắc</string>
+    <string name="hello_blank_fragment">Xin chào!</string>
+</resources>
+
