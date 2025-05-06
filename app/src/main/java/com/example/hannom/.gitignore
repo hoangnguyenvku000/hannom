@@ -1,0 +1,49 @@
+# Built application files
+*.apk
+*.ap_
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+build/
+
+# Gradle files
+.gradle/
+build/
+**/build/
+
+# Local configuration file (SDK paths, etc)
+local.properties
+
+# Log files
+*.log
+
+# Android Studio
+.idea/
+*.iml
+*.iws
+
+# Keystore files
+*.jks
+*.keystore
+
+# Crashlytics and Fabric
+crashlytics.properties
+fabric.properties
+
+# Others
+captures/
+output.json
+*.hprof
+
+# macOS & Linux
+.DS_Store
+*.swp
+*.swo
