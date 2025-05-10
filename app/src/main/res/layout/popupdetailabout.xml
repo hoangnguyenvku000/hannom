@@ -21,31 +21,32 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/namadev"
+                android:id="@+id/tendev"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="134dp"
                 android:fontFamily="@font/berlinlight"
                 android:gravity="center"
-                android:text="Shaddam Amru Hasbiuan"
+                android:text="范黃源
+                                            (Phạm Hoàng Nguyên)"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="22sp" />
 
             <TextView
-                android:id="@+id/profesidev"
+                android:id="@+id/linh_vucdev"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/namadev"
+                android:layout_below="@id/tendev"
                 android:layout_marginTop="-4dp"
-                android:fontFamily="@font/berlinsans"
+                android:fontFamily="@font/han_nom_gothic"
                 android:gravity="center"
-                android:text="Programmer"
+                android:text="Nhà phát triển"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="30sp" />
 
             <RelativeLayout
                 android:id="@+id/tempatkerja"
-                android:layout_below="@+id/profesidev"
+                android:layout_below="@+id/linh_vucdev"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
@@ -119,14 +120,14 @@
                 android:layout_below="@id/tempatkerja"
                 android:layout_marginTop="8dp"
                 android:gravity="center"
-                android:text="Saya adalah seorang desainer asal kota kecil Cimahi yang tertarik untuk belajar dan meng-explore hal baru demi meningkatkan skill saya"
+                android:text="Tôi là một lập trình viên, luôn đam mê học hỏi và khám phá những điều mới để nâng cao kỹ năng của bản thân."
                 android:textColor="@color/colorPrimaryDark" />
 
             <Button
-                android:id="@+id/kontak"
+                android:id="@+id/lienlac"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_centerHorizontal="true"
-                android:text="kontak"
+                android:text="Liên lạc"
                 android:fontFamily="@font/berlinlight"
                 android:textColor="@android:color/white"
                 android:textAllCaps="false"

@@ -9,15 +9,15 @@
 
 
     <TextView
-        android:id="@+id/predikat"
+        android:id="@+id/announcement"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:paddingEnd="28dp"
         android:paddingStart="28dp"
-        android:fontFamily="@font/berlinsans"
+        android:fontFamily="@font/times_new_roman"
         android:gravity="center"
-        android:text="Selamat! Skor quiz kamu..."
+        android:text="Chúc mừng! Điểm số của bạn là ..."
         android:textColor="@color/colorPrimaryDark"
         android:textSize="44sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,7 +31,7 @@
         android:id="@+id/grade"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/berlinsans"
+        android:fontFamily="@font/han_nom_gothic"
         android:gravity="center"
         android:text="100/100"
         android:textColor="@color/colorPrimaryDark"
@@ -39,7 +39,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/predikat"
+        app:layout_constraintTop_toBottomOf="@+id/announcement"
         app:layout_constraintVertical_bias="0.13999999" />
 
     <TextView
@@ -71,7 +71,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/bagikan"
+        android:id="@+id/share"
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -80,8 +80,8 @@
         android:paddingEnd="48dp"
         android:layout_marginTop="32dp"
         android:background="@drawable/buttongreen"
-        android:fontFamily="@font/berlinsans"
-        android:text="Bagikan"
+        android:fontFamily="@font/han_nom_gothic"
+        android:text="Chia sẻ"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         android:textAllCaps="false"
@@ -102,16 +102,16 @@
         android:layout_marginTop="16dp"
         android:layout_weight="1"
         android:background="@drawable/buttonorange"
-        android:fontFamily="@font/berlinsans"
+        android:fontFamily="@font/han_nom_gothic"
         android:gravity="center"
-        android:text="Kembali"
+        android:text="Quay lại"
         android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bagikan"
+        app:layout_constraintTop_toBottomOf="@+id/share"
         app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,14 +14,14 @@ class Result : AppCompatActivity() {
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val nilai = intent.getIntExtra("nilai", 0)
+        val grade = intent.getIntExtra("điểm", 0)
         val level = intent.getStringExtra("level")
 
-        if (nilai <= 60){
-            binding.predikat.text = "Skor quiz kamu masih terlalu kecil :("
+        if (grade <= 60){
+            binding.announcement.text = "Điểm của bạn quá thấp :("
         }
         else {
-            binding.predikat.text = "Selamat! Skor quiz kamu..."
+            binding.announcement.text = "Chúc mừng! Điểm số của bạn là ..."
         }
 
         when (level) {
@@ -36,17 +36,17 @@ class Result : AppCompatActivity() {
             }
         }
 
-        val hasil = nilai.toString()
+        val hasil = grade.toString()
 
         binding.grade.text = "$hasil/100"
-        binding.bagikan.setOnClickListener {
+        binding.share.setOnClickListener {
             val sendIntent: Intent = Intent().apply {
                 action = Intent.ACTION_SEND
-                putExtra(Intent.EXTRA_TEXT, "Wow nilai ku diquiz hannom $hasil, ayo download aplikasinya sekarang di Play Store!")
+                putExtra(Intent.EXTRA_TEXT, "Điểm số của tôi trong bài trắc nghiệm $hasil")
                 type = "text/plain"
             }
 
-            val shareIntent = Intent.createChooser(sendIntent, "Bagikan ke...")
+            val shareIntent = Intent.createChooser(sendIntent, "Chia sẻ đến ...")
             startActivity(shareIntent)
         }
 

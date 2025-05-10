@@ -31,7 +31,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_gravity="center"
-            android:fontFamily="@font/berlinsans"
+            android:fontFamily="@font/han_nom_gothic"
             android:gravity="center_vertical"
             android:text="@string/hannom_developer"
             android:textColor="@color/colorPrimaryDark"
@@ -80,38 +80,28 @@
                             android:src="@drawable/potoaing" />
 
                         <TextView
-                            android:id="@+id/namadev1"
+                            android:id="@+id/tendev1"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/gambarnya"
                             android:layout_marginTop="10dp"
-                            android:fontFamily="@font/berlinlight"
+                            android:fontFamily="@font/han_nom_gothic"
                             android:gravity="center"
-                            android:text="Shaddam A. H"
+                            android:text="范黃源
+                            (Phạm Hoàng Nguyên)"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="18sp" />
-
-                        <TextView
-                            android:id="@+id/descabout"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/namadev1"
-                            android:fontFamily="@font/berlinlight"
-                            android:gravity="center"
-                            android:text="sebagai"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="14sp" />
 
                         <TextView
                             android:id="@+id/design"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/descabout"
+                            android:layout_below="@id/tendev1"
                             android:layout_marginTop="8dp"
-                            android:fontFamily="@font/berlinsans"
+                            android:fontFamily="@font/han_nom_gothic"
                             android:gravity="center"
                             android:padding="4dp"
-                            android:text="Designer"
+                            android:text="Developer"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="22sp" />
                     </RelativeLayout>
@@ -163,36 +153,26 @@
                             android:src="@drawable/adrian" />
 
                         <TextView
-                            android:id="@+id/namadev2"
+                            android:id="@+id/tendev2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/gambarnya2"
                             android:layout_marginTop="10dp"
-                            android:fontFamily="@font/berlinlight"
+                            android:fontFamily="@font/han_nom_gothic"
                             android:gravity="center"
-                            android:text="Adrian DeKa"
+                            android:text="潘清福
+                            (Phan Thanh Phúc)"
                             android:textColor="@color/colorPrimaryDark"
                             android:textSize="18sp" />
-
-                        <TextView
-                            android:id="@+id/descabout2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_below="@id/namadev2"
-                            android:fontFamily="@font/berlinlight"
-                            android:gravity="center"
-                            android:text="sebagai"
-                            android:textColor="@color/colorPrimaryDark"
-                            android:textSize="14sp" />
 
                         <TextView
                             android:id="@+id/design2"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_below="@id/descabout2"
+                            android:layout_below="@id/tendev2"
                             android:layout_marginTop="9dp"
                             android:layout_marginBottom="42dp"
-                            android:fontFamily="@font/berlinsans"
+                            android:fontFamily="@font/han_nom_gothic"
                             android:gravity="center"
                             android:padding="4dp"
                             android:text="Programmer"
@@ -223,7 +203,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginTop="40dp"
-            android:fontFamily="@font/berlinsans"
+            android:fontFamily="@font/han_nom_gothic"
             android:text="@string/belikan_kami_secangkir_kopi"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="38sp"

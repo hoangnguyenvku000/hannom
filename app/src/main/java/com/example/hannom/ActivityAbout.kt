@@ -18,7 +18,7 @@ class ActivityAbout : AppCompatActivity() {
 
     private lateinit var popUpDetail: Dialog
     private lateinit var devPhoto: ImageView
-    private lateinit var namaDev: TextView
+    private lateinit var tenDev: TextView
     private lateinit var profDev: TextView
     private lateinit var descDev: TextView
     private lateinit var exitButtonPopUp: ImageButton
@@ -27,7 +27,7 @@ class ActivityAbout : AppCompatActivity() {
     private lateinit var buttonkerja2: ImageButton
     private lateinit var buttonkerja3: ImageButton
     private lateinit var buttonkerja4: ImageButton
-    private lateinit var buttonkontak: Button
+    private lateinit var buttonlienlac: Button
 
     private lateinit var popupdonate : Dialog
     private lateinit var textdonate : TextView
@@ -35,16 +35,16 @@ class ActivityAbout : AppCompatActivity() {
 
     private lateinit var binding: ActivityAboutBinding
 
-    var nama = ""
+    var ten = ""
     var photo = ""
-    var profesi = ""
+    var linh_vuc = ""
     var desc = ""
     var kerja = ""
     var link1 = ""
     var link2 = ""
     var link3 = ""
     var link4 = ""
-    var kontak = ""
+    var lienlac = ""
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -60,31 +60,31 @@ class ActivityAbout : AppCompatActivity() {
             finish()
         }
         binding.profilesadam.setOnClickListener {
-            nama = "Shaddam Amru Hasibuan"
+            ten = "范黃源\n (Phạm Hoàng Nguyên)"
             photo = "sadam"
-            profesi = "Nhà thiết kế"
+            linh_vuc = "Nhà phát triển"
             desc =
-                "Tôi là một nhà thiết kế đến từ thành phố nhỏ Cimahi, đam mê học hỏi và khám phá những điều mới để nâng cao kỹ năng của mình."
+                "Tôi là một lập trình viên sống tại thành phố Đà Nẵng, đam mê học hỏi và khám phá những điều mới để nâng cao kỹ năng của mình."
             kerja = "bh"
-            link1 = "https://www.linkedin.com/in/shaddamah/"
-            link2 = "https://www.behance.net/shaddzgn"
-            link3 = "https://github.com/shaddamah"
-            link4 = "https://instagram.com/shaddamah?igshid=19vo8nv0rio7a"
-            kontak = "shaddam.a.h@gmail.com"
+            link1 = ""
+            link2 = ""
+            link3 = ""
+            link4 = ""
+            lienlac = "nguyenph23ite@vku.udn.vn"
             dialog()
         }
         binding.profiledeka.setOnClickListener {
-            nama = "Adrian Daniel"
+            ten = "潘清福\n (Phan Thanh Phúc)"
             photo = "deka"
-            profesi = "Lập trình viên"
+            linh_vuc = "Lập trình viên"
             desc =
                 ""
             kerja = "fb"
-            link1 = "https://www.linkedin.com/in/adrian-daniel-23a0ba1a1/"
-            link2 = "https://wa.me/+628818117213"
-            link3 = "https://github.com/adriandk"
-            link4 = "https://www.instagram.com/adriandk_/?hl=en"
-            kontak = "adriandaniel1803@gmail.com"
+            link1 = ""
+            link2 = ""
+            link3 = ""
+            link4 = ""
+            lienlac = ""
             dialog()
         }
 
@@ -104,8 +104,8 @@ class ActivityAbout : AppCompatActivity() {
     fun dialog() {
         popUpDetail.setContentView(R.layout.popupdetailabout)
         devPhoto = popUpDetail.findViewById(R.id.devphoto)
-        namaDev = popUpDetail.findViewById(R.id.namadev)
-        profDev = popUpDetail.findViewById(R.id.profesidev)
+        tenDev = popUpDetail.findViewById(R.id.tendev)
+        profDev = popUpDetail.findViewById(R.id.linh_vucdev)
         descDev = popUpDetail.findViewById(R.id.descdev)
         exitButtonPopUp = popUpDetail.findViewById(R.id.exit_button_popup)
         kerjaIcon = popUpDetail.findViewById(R.id.kerja2)
@@ -113,7 +113,7 @@ class ActivityAbout : AppCompatActivity() {
         buttonkerja2 = popUpDetail.findViewById(R.id.kerja2)
         buttonkerja3 = popUpDetail.findViewById(R.id.kerja3)
         buttonkerja4 = popUpDetail.findViewById(R.id.kerja4)
-        buttonkontak = popUpDetail.findViewById(R.id.kontak)
+        buttonlienlac = popUpDetail.findViewById(R.id.lienlac)
 //
 
         buttonkerja1.setOnClickListener {
@@ -136,9 +136,9 @@ class ActivityAbout : AppCompatActivity() {
             kerja.data = link4.toUri()
             startActivity(kerja)
         }
-        buttonkontak.setOnClickListener {
+        buttonlienlac.setOnClickListener {
             val i = Intent(Intent.ACTION_SENDTO)
-            i.data = "mailto:$kontak".toUri()
+            i.data = "mailto:$lienlac".toUri()
             try {
                 startActivity(i)
             } catch (ex: ActivityNotFoundException) {
@@ -165,8 +165,8 @@ class ActivityAbout : AppCompatActivity() {
             }
         }
 
-        namaDev.text = nama
-        profDev.text = profesi
+        tenDev.text = ten
+        profDev.text = linh_vuc
         descDev.text = desc
         exitButtonPopUp.setOnClickListener {
             popUpDetail.dismiss()

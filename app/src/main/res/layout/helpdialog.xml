@@ -27,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="64dp"
                 android:fontFamily="@font/berlinlight"
-                android:text="Kamu bisa menghubungi developer untuk berdonasi (kontak bisa ditemukan di Profil developer diatas)"
+                android:text="Bạn có thể liên hệ nhà phát triển để đóng góp (thông tin liên hệ có trong phần Hồ sơ nhà phát triển bên trên)"
                 android:textColor="@color/colorPrimaryDark"
                 android:textSize="24sp" />
         </RelativeLayout>
@@ -41,7 +41,7 @@
         android:background="@drawable/buttonorange"
         android:clickable="false"
         android:fontFamily="@font/berlinlight"
-        android:text="bantuan"
+        android:text="Trợ giúp"
         android:textAllCaps="false"
         android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="@+id/cardView3"
