@@ -65,7 +65,7 @@ class HomeActivity : AppCompatActivity(){
             btnxPopUP = epicDialog.findViewById(R.id.button_xhelp)
             helptext = epicDialog.findViewById(R.id.help)
 
-            helptext.text = "Pilih salah binding.satu tombol untuk belajar atau bermain"
+            helptext.text = "Chọn một mục bất kì để bắt đầu"
 
             btnxPopUP.setOnClickListener {
                 epicDialog.dismiss()
