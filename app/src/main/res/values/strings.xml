@@ -12,5 +12,13 @@
     <string name="belajar_alfabet">Học bảng chữ cái</string>
     <string name="belajar_warna">Học màu sắc</string>
     <string name="hello_blank_fragment">Xin chào!</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="button_sign_up">Sign Up</string>
+    <string name="button_login">Login</string>
+    <string name="text_sign_up">Don’t have an account? Sign up</string>
+    <string name="text_login">Already have an account? Login</string>
 </resources>
 

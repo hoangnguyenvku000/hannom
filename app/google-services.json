@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "375760110390",
+    "project_id": "hannom-304e8",
+    "storage_bucket": "hannom-304e8.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375760110390:android:a2fd0546c1eb92912ea997",
+        "android_client_info": {
+          "package_name": "com.example.hannom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfmGOvQXf_zp-yWCAWmnFknGRBcvIliRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
