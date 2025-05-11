@@ -1,9 +1,8 @@
-package com.example.hannom
+package com.example.hannom.main
 
 import android.app.Dialog
 import android.content.Intent
 import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
@@ -12,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.example.hannom.databinding.ActivityQuizBinding
 import androidx.core.graphics.drawable.toDrawable
+import com.example.hannom.R
 
 class Quiz : AppCompatActivity() {
 

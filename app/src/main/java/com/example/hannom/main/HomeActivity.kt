@@ -1,4 +1,4 @@
-package com.example.hannom
+package com.example.hannom.main
 
 import android.app.Dialog
 import android.content.Intent
@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import com.example.hannom.R
 import com.example.hannom.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity(){
@@ -18,7 +19,6 @@ class HomeActivity : AppCompatActivity(){
     private lateinit var btnLearnXGames : Button
     private lateinit var btnLearnXGames2: Button
     private lateinit var helptext: TextView
-    private lateinit var binding: ActivityHomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

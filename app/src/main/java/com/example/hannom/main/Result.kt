@@ -1,7 +1,6 @@
-package com.example.hannom
+package com.example.hannom.main
 
 import android.content.Intent
-import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.hannom.databinding.ActivityResultBinding

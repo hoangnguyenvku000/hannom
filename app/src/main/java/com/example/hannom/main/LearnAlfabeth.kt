@@ -1,11 +1,13 @@
-package com.example.hannom
+package com.example.hannom.main
 
 import android.annotation.SuppressLint
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import com.example.hannom.R
 import com.example.hannom.databinding.ActivityLearnAlfabethBinding
+import kotlin.collections.iterator
 
 class LearnAlfabeth : AppCompatActivity() {
 

@@ -1,8 +1,7 @@
-package com.example.hannom
+package com.example.hannom.main
 
 import android.app.Dialog
 import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
 import android.graphics.drawable.GradientDrawable
 import android.media.MediaPlayer
 import android.os.Bundle
@@ -12,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.hannom.databinding.ActivityGamesColorBinding
 import java.util.*
 import androidx.core.graphics.drawable.toDrawable
+import com.example.hannom.R
 
 class GamesColor : AppCompatActivity() {
 

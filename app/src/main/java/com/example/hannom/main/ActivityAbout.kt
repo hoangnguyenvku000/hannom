@@ -1,17 +1,16 @@
-package com.example.hannom
+package com.example.hannom.main
 
 import android.app.Dialog
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.graphics.Color
-import android.graphics.drawable.ColorDrawable
-import android.net.Uri
 import android.os.Bundle
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.example.hannom.databinding.ActivityAboutBinding
 import androidx.core.net.toUri
 import androidx.core.graphics.drawable.toDrawable
+import com.example.hannom.R
 
 
 class ActivityAbout : AppCompatActivity() {

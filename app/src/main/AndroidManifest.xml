@@ -12,23 +12,13 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".ActivityAbout" />
+            android:name=".main.MainActivity"
+            android:exported="true" />
         <activity
-            android:name=".Result" />
+            android:name=".auth.ResgisterActivity"
+            android:exported="false" />
         <activity
-            android:name=".Quiz" />
-        <activity
-            android:name=".GamesColor" />
-        <activity
-            android:name=".GamesQuiz" />
-        <activity
-            android:name=".LearnColor" />
-        <activity
-            android:name=".LearnAlfabeth" />
-        <activity
-            android:name=".HomeActivity" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".auth.LoginFormActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,6 +26,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".main.ActivityAbout" />
+        <activity
+            android:name=".main.Result" />
+        <activity
+            android:name=".main.Quiz" />
+        <activity
+            android:name=".main.GamesColor" />
+        <activity
+            android:name=".main.GamesQuiz" />
+        <activity
+            android:name=".main.LearnColor" />
+        <activity
+            android:name=".main.LearnAlfabeth" />
+        <activity
+            android:name=".main.HomeActivity" />
     </application>
 
 </manifest>

@@ -1,10 +1,11 @@
-package com.example.hannom
+package com.example.hannom.main
 
 import android.content.Intent
 import android.media.MediaPlayer
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import com.example.hannom.R
 
 class MainActivity : AppCompatActivity() {
 

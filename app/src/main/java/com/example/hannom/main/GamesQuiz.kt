@@ -1,4 +1,4 @@
-package com.example.hannom
+package com.example.hannom.main
 
 import android.annotation.SuppressLint
 import android.app.Dialog
@@ -13,6 +13,7 @@ import android.widget.Toast
 import androidx.core.content.ContextCompat
 import com.example.hannom.databinding.ActivityGamesQuizBinding
 import androidx.core.graphics.drawable.toDrawable
+import com.example.hannom.R
 
 class GamesQuiz : AppCompatActivity() {
 
