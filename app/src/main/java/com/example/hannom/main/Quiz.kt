@@ -4,6 +4,7 @@ import android.app.Dialog
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Toast
@@ -153,21 +154,27 @@ class Quiz : AppCompatActivity() {
 
     private fun handleNextButton() {
         if (selectedAnswer.isEmpty()) {
-            Toast.makeText(this, "Pilih jawaban terlebih dahulu!", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "Hãy chọn câu trả lời trước!", Toast.LENGTH_SHORT).show()
             return
         }
 
+        // Kiểm tra đáp án TRƯỚC KHI tăng currentQuestionIndex
         if (selectedAnswer == answers[currentQuestionIndex]) {
             correctAnswers++
         }
+
+        // Reset selectedAnswer sau mỗi câu hỏi
+        selectedAnswer = ""
+        resetAnswerButtons()
+
 
         currentQuestionIndex++
         questionNumber++
 
         when (level) {
-            "1" -> if (currentQuestionIndex == 5) showResult() else loadQuestion()
-            "2" -> if (currentQuestionIndex == 10) showResult() else loadQuestion()
-            "3" -> if (currentQuestionIndex == 15) showResult() else loadQuestion()
+            "1" -> if (currentQuestionIndex >= 5) showResult() else loadQuestion()
+            "2" -> if (currentQuestionIndex >= 10) showResult() else loadQuestion()
+            "3" -> if (currentQuestionIndex >= 15) showResult() else loadQuestion()
         }
     }
 
@@ -177,9 +184,9 @@ class Quiz : AppCompatActivity() {
             "2" -> correctAnswers * 10
             else -> (correctAnswers * 6) + 10
         }
-
+  
         Intent(this, Result::class.java).apply {
-            putExtra("nilai", marks)
+            putExtra("grade", marks)
             putExtra("level", level)
             startActivity(this)
         }

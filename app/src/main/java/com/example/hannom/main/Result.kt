@@ -13,7 +13,7 @@ class Result : AppCompatActivity() {
         binding = ActivityResultBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val grade = intent.getIntExtra("điểm", 0)
+        val grade = intent.getIntExtra("grade", 0)
         val level = intent.getStringExtra("level")
 
         if (grade <= 60){
@@ -35,13 +35,13 @@ class Result : AppCompatActivity() {
             }
         }
 
-        val hasil = grade.toString()
+        val result = grade.toString()
 
-        binding.grade.text = "$hasil/100"
+        binding.grade.text = "$result/100"
         binding.share.setOnClickListener {
             val sendIntent: Intent = Intent().apply {
                 action = Intent.ACTION_SEND
-                putExtra(Intent.EXTRA_TEXT, "Điểm số của tôi trong bài trắc nghiệm $hasil")
+                putExtra(Intent.EXTRA_TEXT, "Điểm số của tôi trong bài trắc nghiệm $result")
                 type = "text/plain"
             }
 
